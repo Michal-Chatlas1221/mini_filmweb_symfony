@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Mini-Filweb{% endblock %}</title>
+    {% block stylesheets %}
+    {% endblock %}
+
+    {% block head %}
+
+    {% endblock head %}
+</head>
+
+<body {% block body_params %}class=""{% endblock %}>
+<!-- NAVBAR -->
+<div {% block wrapper_params %}{% endblock %}>
+    {% block page_top %}
+        {#navbar+ logo#}
+    {% endblock page_top %}
+
+    <!-- PAGE HEADING -->
+    {% block page_heading %}
+    {% endblock %}
+
+    <!-- BODY  -->
+    <div class="ng-cloak">
+        {% block body %}
+            <div class="container container-main space-">
+                {% block content %}
+                {% endblock %}
+            </div>
+        {% endblock body %}
+    </div>
+    <!-- FOOTER  -->
+    {% block footer %}
+    {% endblock %}
+
+
+
+    <!-- MODALS -->
+
+    {% block modals %}
+    {% endblock %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+
+    {% block javascripts %}
+    {% endblock %}
+
+    {% block legacy_javascripts %}
+    {% endblock %}
+</div>
+</body>
+</html>
