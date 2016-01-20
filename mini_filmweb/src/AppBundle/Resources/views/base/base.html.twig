@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>{% block title %}Mini-Filweb{% endblock %}</title>
     {% block stylesheets %}
+        {% stylesheets
+            '@angular_material_css'
+        combine=true %}
+        <link href="{{ asset_url }}" type="text/css" rel="stylesheet"/>
+        {% endstylesheets %}
     {% endblock %}
 
     {% block head %}
@@ -48,7 +53,8 @@
 
     {% block javascripts %}
         {% javascripts combine=true output='js/javascripts.js'
-            '@angular_js' '@angular_material_js' '@angular_modules_js'
+            '@angular_js' '@angular_messages_js' '@angular_aria_js'
+            '@angular_animate_js' '@angular_material_js' '@angular_modules_js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}

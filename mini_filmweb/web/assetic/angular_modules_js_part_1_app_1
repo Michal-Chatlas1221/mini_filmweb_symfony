@@ -1,1 +1,1 @@
-angular.module("one_and_only", []);
+angular.module("one_and_only", ['ngMaterial', 'ngMessages']);
