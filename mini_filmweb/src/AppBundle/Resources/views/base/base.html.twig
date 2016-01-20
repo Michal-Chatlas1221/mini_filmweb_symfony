@@ -48,7 +48,7 @@
 
     {% block javascripts %}
         {% javascripts combine=true output='js/javascripts.js'
-            '@angular_js' '@angular_modules_js'
+            '@angular_js' '@angular_material_js' '@angular_modules_js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}

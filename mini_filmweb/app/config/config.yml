@@ -79,6 +79,9 @@ assetic:
         angular_js:
              inputs:
                 - '%kernel.root_dir%/../bower_components/angular/angular.js'
+        angular_material_js:
+             inputs:
+                - '%kernel.root_dir%/../bower_components/angular-material/angular-material.js'
         angular_modules_js:
              inputs:
                 - '@AppBundle/Resources/js/*'
