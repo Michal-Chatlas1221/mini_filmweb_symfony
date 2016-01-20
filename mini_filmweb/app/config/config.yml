@@ -73,3 +73,13 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: AppBundle\Entity\User
+
+assetic:
+    assets:
+        angular_js:
+             inputs:
+                - '%kernel.root_dir%/../bower_components/angular/angular.js'
+        angular_modules_js:
+             inputs:
+                - '@AppBundle/Resources/js/*'
+                - '@AppBundle/Resources/js/*/*'
