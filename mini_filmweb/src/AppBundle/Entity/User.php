@@ -21,10 +21,32 @@ class User extends BaseUser {
      */
     protected $id;
 
+    /**
+     * @var Profile
+     * @ORM\OneToOne(targetEntity="Profile", mappedBy="user")
+     */
+    private $profile;
+
     public function __construct()
     {
         parent::__construct();
         // your own logic
+    }
+
+    /**
+     * @return Profile
+     */
+    public function getProfile()
+    {
+        return $this->profile;
+    }
+
+    /**
+     * @param Profile $profile
+     */
+    public function setProfile($profile)
+    {
+        $this->profile = $profile;
     }
 
 } 
