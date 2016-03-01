@@ -2,8 +2,8 @@
 
 namespace AppBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use FOS\UserBundle\FOSUserBundle;
 
-class AppBundle extends Bundle
+class AppBundle extends FOSUserBundle
 {
 }
